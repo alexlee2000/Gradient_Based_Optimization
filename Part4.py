@@ -1,4 +1,4 @@
-# From part d 
+# Preprocessing
 #--------------------------------------------------------------------------------------------------------------------------------
 import pandas as pd
 import numpy as np
@@ -18,8 +18,8 @@ Ytest = asarray(Y_Q2_data.tail(204))
 #--------------------------------------------------------------------------------------------------------------------------------
 
 # Using Jax to implement gradient descent 
-import jax.numpy as jnp # For part e
-from jax import grad # For part e
+import jax.numpy as jnp 
+from jax import grad 
 
 def L_w_func(w): # loss for training data
     X = jnp.asarray(Xtrain) # 204 x 3 
